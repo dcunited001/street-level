@@ -6,10 +6,10 @@ module HelperMethods
 
     Capybara.save_and_open_page
 
-    within 'form#user_new' do
+    within '#user_new' do
       fill_in("user[login]", :with => user.username)
       fill_in("user[password]", :with => 'password')
-      click_button("Sign In")
+      click_button("Sign in")
     end
   end
 
