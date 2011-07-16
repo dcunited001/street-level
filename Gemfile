@@ -42,6 +42,8 @@ group :development, :test do
   gem 'refinerycms-testing',    '~> 1.0.1'
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'steak'
+
 end
 
 group :test do
