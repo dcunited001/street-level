@@ -8,6 +8,26 @@
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest'  -%>
   </div>
+
+    <div class='field'>
+      <%= f.label :event_type_id -%>
+      <%= f.select(:event_type_id, @event_types.map { |et| [et.name, et.id] }) %>
+    </div>
+
+    <div class='field'>
+      <%= f.label :start -%>
+      <%= f.datetime_select :start  -%>
+    </div>
+
+    <div class='field'>
+      <%= f.label :end -%>
+      <%= f.datetime_select :end  -%>
+    </div>
+
+  <div class='field'>
+    <%= f.label :visible -%>
+    <%= f.check_box :visible, :checked => @event[:visible] -%>
+  </div>
   
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
@@ -28,22 +48,7 @@
       </div>
     </div>
   </div>
-  
-  <div class='field'>
-    <%= f.label :start -%>
-    <%= f.datetime_select :start  -%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :end -%>
-    <%= f.datetime_select :end  -%>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :eventtype_id -%>
-    <%= f.text_field :eventtype_id  -%>
-  </div>
-  
+
   <div class='field'>
     <%= f.label :pic -%>
     <%= render :partial => "/shared/admin/image_picker", :locals => {
@@ -52,11 +57,6 @@
           :image => @event.pic,
           :toggle_image_display => false
         } %>
-  
-  <div class='field'>
-    <%= f.label :visible -%>
-    <%= f.text_field :visible  -%>
-  </div>
   
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {

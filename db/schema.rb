@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20110716040719) do
     t.text     "description"
     t.datetime "start"
     t.datetime "end"
-    t.integer  "eventtype_id"
+    t.integer  "event_type_id"
     t.integer  "pic_id"
     t.boolean  "visible"
     t.integer  "position"
