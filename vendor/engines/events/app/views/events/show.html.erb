@@ -1,0 +1,63 @@
+<% content_for :body_content_title do %>
+  <%= @event.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @event.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @event.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Start</h1>
+    <p>
+      <%=raw @event.start %>
+    </p>
+  </section>
+  <section>
+    <h1>End</h1>
+    <p>
+      <%=raw @event.end %>
+    </p>
+  </section>
+  <section>
+    <h1>Eventtype</h1>
+    <p>
+      <%=raw @event.eventtype_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Pic</h1>
+    <p>
+      <%= image_fu @event.pic, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Visible</h1>
+    <p>
+      <%=raw @event.visible %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="events">
+      <% @events.each do |event| %>
+        <li>
+          <%= link_to event.name, event_path(event) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @sponsor.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @sponsor.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Twitter</h1>
+    <p>
+      <%=raw @sponsor.twitter %>
+    </p>
+  </section>
+  <section>
+    <h1>Pic</h1>
+    <p>
+      <%= image_fu @sponsor.pic, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Desc</h1>
+    <p>
+      <%=raw @sponsor.desc %>
+    </p>
+  </section>
+  <section>
+    <h1>Visible</h1>
+    <p>
+      <%=raw @sponsor.visible %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="sponsors">
+      <% @sponsors.each do |sponsor| %>
+        <li>
+          <%= link_to sponsor.name, sponsor_path(sponsor) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    sponsors:
+      title: Sponsors
+  admin:
+    sponsors:
+      actions:
+        create_new: CREATE NEW Sponsor
+        reorder: REORDR Sponsors
+        reorder_done: DUN REORDERIN Sponsors
+      records:
+        title: Sponsors
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Sponsors YET. CLICK "CREATE NEW Sponsor" 2 ADD UR FURST sponsor.
+      sponsor:
+        view_live_html: VIEW DIS sponsor LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS sponsor
+        delete: REMOOV DIS sponsor FOREVR
+  sponsors:
+    show:
+      other: OTHR Sponsors
