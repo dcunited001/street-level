@@ -10,3 +10,6 @@ Dir[Rails.root.join('db', 'seeds', '*.rb').to_s].each do |file|
   puts "Loading db/seeds/#{file.split(File::SEPARATOR).last}"
   load(file)
 end
+
+# NOTE: One thing I don't know how to do and really wish I did
+#         is to be able to seed models that contain images
