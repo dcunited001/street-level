@@ -1,4 +1,4 @@
-Factory.define :user, :class => 'User' do |u|
+Factory.define :regular_user, :class => 'User' do |u|
   u.sequence(:username) { |n| "username#{n}" }
   u.sequence(:email) { |n| "email#{n}@example.com" }
   u.password 'password'
@@ -7,7 +7,7 @@ Factory.define :user, :class => 'User' do |u|
   u.roles { [Role[:refinery]] }
 end
 
-Factory.define :admin, :parent => :user do |a|
+Factory.define :admin, :parent => :regular_user do |a|
   a.sequence(:username) { |n| "admin#{n}" }
   a.sequence(:email) { |n| "admin#{n}@example.com" }
 end

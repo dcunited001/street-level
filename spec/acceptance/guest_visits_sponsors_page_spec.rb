@@ -21,7 +21,7 @@ feature 'Guest visits sponsors page' do
       end
     end
 
-    context 'they can click a sponsor' do
+    context 'then they click a sponsor link' do
       before do
         click_link @sponsor_one.name
       end

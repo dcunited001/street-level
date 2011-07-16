@@ -19,7 +19,7 @@ feature 'Guest visits videos page' do
       end
     end
 
-    context 'they can click a video' do
+    context 'then they click a video ”link' do
       before do
         click_link @video_one.name
       end

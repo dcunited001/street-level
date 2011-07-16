@@ -4,8 +4,6 @@ module HelperMethods
   def login_as(user)
     visit "/users/login"
 
-    Capybara.save_and_open_page
-
     within '#user_new' do
       fill_in("user[login]", :with => user.username)
       fill_in("user[password]", :with => 'password')

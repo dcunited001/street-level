@@ -22,7 +22,7 @@ feature 'Guest visits events page' do
       end
     end
 
-    context 'they can click an event' do
+    context 'then they click an event link' do
       before do
         click_link @event_one.name
       end

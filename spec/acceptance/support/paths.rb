@@ -4,6 +4,10 @@ module NavigationHelpers
   def homepage
     "/"
   end
+
+  def admin_interface
+    "/refinery"
+  end
 end
 
 RSpec.configuration.include NavigationHelpers, :type => :acceptance
