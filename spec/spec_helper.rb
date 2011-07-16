@@ -12,9 +12,6 @@ def setup_environment
   # Requires supporting files with custom matchers and macros, etc,
   # in ./support/ and its subdirectories.
   Dir[File.expand_path('../support/**/*.rb', __FILE__)].each {|f| require f}
-  
-  #create first user, so Refinery doesn't prompt you to create one
-  Factory(:admin)
 
   RSpec.configure do |config|
     # == Mock Framework
