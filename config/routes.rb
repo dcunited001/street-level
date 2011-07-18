@@ -1,4 +1,14 @@
 StreetLevel::Application.routes.draw do
+
+  #sponsor_types = /(platinum|gold|silver)/i
+  #match 'sponsors/:level' => 'sponsors#index', :constraints => { :level => sponsor_types }
+  match 'sponsors/:slug' => 'sponsors#show', :as => :sponsor
+
+  match 'events/:slug' => 'events#show', :as => :event
+  match 'videos/:slug' => 'videos#show', :as => :video
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

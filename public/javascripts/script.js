@@ -12,7 +12,7 @@ $(function() {
 
   $(".sidebar-twitter").tweet({
     join_text: "auto",
-    username: "dcunit3d",
+    username: "dcUnit3d",
     avatar_size: 48,
     count: 3,
     auto_join_text_default: "we said,",

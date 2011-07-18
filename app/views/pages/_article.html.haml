@@ -1,0 +1,17 @@
+.article
+  %h2
+    %span= article[:name]
+  - if article[:date]
+    %p.infopost
+      Posted on
+      %span.date= format_article_date(article[:date])
+  .clr
+  - if article[:pic]
+    .img
+      %img.fl{:src => article[:pic], :width => 198, :height => 188, :alt => ''}
+    .post_content
+      %p= raw article[:desc]
+  - else
+    %p= raw article[:desc]
+    -# %p.spec
+      -# = link_to 'Read More', '#',
