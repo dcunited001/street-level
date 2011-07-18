@@ -32,3 +32,9 @@ rake db:migrate
 rails server
 
 
+
+Please note: When the tests are run with rake spec, the database is loaded with db:schema:load,
+    instead of db:migrate, so all the seeds are not created.  I've tried to hook in db:seeds as a
+    requirement for the test task, which works, but when it seeds the data, it must not be using the
+    test environment.  So, at the moment, my acceptance tests are not passing.  I've posted on the
+    RefineryCMS group, but haven't heard anything back so far.

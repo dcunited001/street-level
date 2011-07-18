@@ -7,6 +7,10 @@ source 'http://rubygems.org'
 
 gem 'pg'
 
+gem 'fog'
+gem 'aws-s3', :require => 'aws/s3'
+gem 'haml'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -34,6 +38,7 @@ gem 'pg'
 # Anything you put in here will be overridden when the app gets updated.
 
 gem 'refinerycms',              '~> 1.0.3'
+gem 'rails', '~> 3.0.9'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
