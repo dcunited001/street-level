@@ -1,0 +1,12 @@
+.searchform
+  %form#formsearch{:name => 'formsearch', :method => 'post', :action => '#'}
+    %span
+      %input.editbox_search#editbox_search{:name => 'editbox_search', :maxlength => 80, :value => 'Search: ', :type => 'text'}
+    %input.button_search{:name => 'button_search', :src => '/images/search.gif', :type => 'image'}
+.logo
+  %h1
+    = link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path
+.clr
+
+
+-#= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path

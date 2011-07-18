@@ -3,18 +3,32 @@
   <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
   <%= render :partial => "/shared/head" %>
   <body>
-    <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="page_container">
-      <header>
-        <%= render :partial => "/shared/header" -%>
-      </header>
-      <section id='page'>
-        <%= yield %>
-      </section>
-      <footer>
+    <div class="main">
+        <div class="header">
+            <div class="header_resize">
+                <%= render :partial => 'shared/header' %>
+                <%= render :partial => 'shared/nav', :locals => { :page_name => @page_name } %>
+                <%= render :partial => 'shared/slider' %>
+            </div>
+        </div>
+
+        <div class="content">
+          <div class="content_resize">
+            <div class="mainbar">
+              <%= yield %>
+            </div>
+            <div class="sidebar">
+                <%= render :partial => 'shared/sidebar/sidebar_twitter' %>
+                <%= render :partial => 'shared/sidebar/videos' %>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+        <div class="fbg">
+          <%= render :partial => 'shared/fbg' %>
+        </div>
         <%= render :partial => "/shared/footer" -%>
-      </footer>
     </div>
     <%= render :partial => "/shared/javascripts" %>
   </body>
