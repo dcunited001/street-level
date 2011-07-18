@@ -6,7 +6,14 @@ class Video < ActiveRecord::Base
   validates :name, :presence => true, :uniqueness => true
   validates :slug, :presence =>  true, :uniqueness => true
 
-  before_create :insert_slug
+  #validates_format_of :url, :with => /http:\/\/(www\.)?youtube\.com\//
+
+  #before_validation :translate_url_to_embed
+  before_save :insert_slug  #why does this not run??
+
+  #def translate_url_to_embed
+  #
+  #end
 
   def insert_slug
     self.slug = to_slug

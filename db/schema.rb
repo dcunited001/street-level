@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110718080927) do
+ActiveRecord::Schema.define(:version => 20110718084955) do
 
   create_table "event_rsvps", :force => true do |t|
     t.integer  "user_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20110718080927) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   add_index "events", ["id"], :name => "index_events_on_id"
@@ -211,6 +212,7 @@ ActiveRecord::Schema.define(:version => 20110718080927) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   add_index "sponsors", ["id"], :name => "index_sponsors_on_id"
@@ -259,6 +261,7 @@ ActiveRecord::Schema.define(:version => 20110718080927) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   add_index "videos", ["id"], :name => "index_videos_on_id"

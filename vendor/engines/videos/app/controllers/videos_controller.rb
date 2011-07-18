@@ -10,7 +10,7 @@ class VideosController < ApplicationController
   end
 
   def show
-    @video = Video.find(params[:id])
+    @video = Video.find(params[:slug])
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @video in the line below:

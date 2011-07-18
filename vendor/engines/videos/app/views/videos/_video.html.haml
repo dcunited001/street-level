@@ -1,0 +1,2 @@
+= render :partial => 'shared/article', :locals => { :article => {:name => video.name, :desc => video.desc, :date => video.created_at } }
+= render :partial => 'youtube', :locals => { :youtube_url => video.url }

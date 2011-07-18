@@ -6,7 +6,7 @@ home_page = Page.create(:title => "Home",
             :position => (page_position += 1))
 home_page.parts.create({
               :title => "Body",
-              :body => "<p>My name is David Conner and I'm a Rails developer from Virginia.  I'm beginning to work solely with the Framework, which is exciting because I love it.  I've been working with Ruby and Rails for about 3 years, this is a demo site that I put together recently to demonstrate my skills with Refinery CMS.  </p>",
+              :body => "<p>My name is David Conner and I'm a Rails developer from Virginia.  I'm beginning to work solely with the framework, which is exciting because I love it.  I've been working with Ruby and Rails for about 3 years, this is a demo site that I put together recently to demonstrate my skills with Refinery CMS.  </p>",
               :position => 0
             })
 home_page.parts.create({

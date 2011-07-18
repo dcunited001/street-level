@@ -1,0 +1,16 @@
+= render :partial => 'video', :locals => { :video => @video }
+
+-#<% content_for :body_content_right do %>
+-#  <aside>
+-#    <h2><%= t('.other') %></h2>
+-#    <ul id="videos">
+-#      <% @videos.each do |video| %>
+-#        <li>
+-#          <%= link_to video.name, video_path(video) %>
+-#        </li>
+-#      <% end %>
+-#    </ul>
+-#  </aside>
+-#<% end %>
+
+<%= render :partial => "/shared/content_page" %>
