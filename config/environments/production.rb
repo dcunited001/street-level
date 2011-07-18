@@ -46,6 +46,13 @@ StreetLevel::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  ENV['S3_KEY']='AKIAJMZ5UQMXC4G6MJSQ'
+  ENV['S3_SECRET']='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'
+  ENV['S3_BUCKET']='street-level'
+
+  #Turn S3 On or Off
+  Refinery.s3_backend = true
 end
 Refinery.rescue_not_found = true
 # When true will use Amazon's Simple Storage Service on your production machine
