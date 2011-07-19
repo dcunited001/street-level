@@ -2,7 +2,7 @@ StreetLevel::Application.routes.draw do
 
   #sponsor_types = /(platinum|gold|silver)/i
   #match 'sponsors/:level' => 'sponsors#index', :constraints => { :level => sponsor_types }
-  match 'sponsors/:slug' => 'sponsors#show', :as => :sponsor
+  #match 'sponsors/:slug' => 'sponsors#show', :as => :sponsor
 
   #its possible to dip into database to grab current types,
   #   but i don't know that its a good idea when processing routes
@@ -11,10 +11,10 @@ StreetLevel::Application.routes.draw do
   #event_types = EventTypes.all.map({|et| et.name}).join('|')
   #event_types = Regexp.new "(#{event_types})", Regexp::IGNORECASE
   #match ':event_type' => 'events#index', :constraints => { :event_type => event_types }
-  match 'events/:slug' => 'events#show', :as => :event
+  #match 'events/:slug' => 'events#show', :as => :event
 
 
-  match 'videos/:slug' => 'videos#show', :as => :video
+  #match 'videos/:slug' => 'videos#show', :as => :video
 
 
 

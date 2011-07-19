@@ -11,6 +11,11 @@ Dir[Rails.root.join('db', 'seeds', '*.rb').to_s].each do |file|
   load(file)
 end
 
+#set the site name
+#RefinerySetting.set(:site_name, "Street Level")
+
+#skip creating a user for now
+#Factory(:admin)
+
 # NOTE: One thing I don't know how to do and really wish I did
 #         is to be able to seed models that contain images
-

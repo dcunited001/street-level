@@ -56,3 +56,7 @@ EventType.create!(
   :name => 'BBoy Cypher',
   :desc => 'Just a cypher.  This is where BBoys get together and give and take, but not bite.'
 )
+
+
+
+#Some Sample Events

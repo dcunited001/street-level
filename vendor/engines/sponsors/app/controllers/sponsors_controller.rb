@@ -10,7 +10,7 @@ class SponsorsController < ApplicationController
   end
 
   def show
-    @sponsor = Sponsor.find(params[:slug])
+    @sponsor = Sponsor.find(params[:id])
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @sponsor in the line below:

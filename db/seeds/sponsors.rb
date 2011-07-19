@@ -20,6 +20,39 @@ if defined?(Page)
   end
 end
 
+Sponsor.create!(
+  :name => 'Nike',
+  :twitter => '@nike',
+  :pic => Image.create(:image => File.new(Rails.root.join('public','images','sponsors','nike.jpg').to_s)),
+  :desc => 'Nike Shoes - Just Do It.',
+  :visible => true
+)
+
+Sponsor.create!(
+  :name => 'Puma',
+  :twitter => '@puma',
+  :pic => Image.create(:image => File.new(Rails.root.join('public','images','sponsors','puma.jpg').to_s)),
+  :desc => 'Get Some Puma\'s.',
+  :visible => true
+)
+
+
+Sponsor.create!(
+  :name => 'Adidas',
+  :twitter => '@adidas',
+  :pic => Image.create(:image => File.new(Rails.root.join('public','images','sponsors','adidas.jpg').to_s)),
+  :desc => 'All Day I Dream About Swipes.',
+  :visible => true
+)
+
+Sponsor.create!(
+  :name => 'Technics',
+  :twitter => '@technics',
+  :pic => Image.create(:image => File.new(Rails.root.join('public','images','sponsors','technics.jpg').to_s)),
+  :desc => 'The only real wheels of steel.',
+  :visible => true
+)
+
 #if these are in the seed file sponsorship_levels.rb
 #   they don't get run with db:migrate
 #but if you run db:seed again,

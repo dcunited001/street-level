@@ -1,5 +1,6 @@
 page_position = -1
 
+
 home_page = Page.create(:title => "Home",
             :deletable => false,
             :link_url => "/",
@@ -16,7 +17,7 @@ home_page.parts.create({
             })
 home_page.parts.create({
               :title => "Pic",
-              :body => "images/small_flare.jpg",
+              :body => "<img src='images/bboys_small.jpg' width=198 height=188 />",
               :position => 2
             })
 
@@ -32,7 +33,7 @@ page_not_found_page.parts.create({
               :position => 0
             })
 
-about_us_page = Page.create(:title => "About",
+about_us_page = Page.create(:title => "About Me",
             :deletable => true,
             :position => (page_position += 1))
 about_us_page.parts.create({
@@ -47,9 +48,6 @@ about_us_page.parts.create({
             })
 about_us_page.parts.create({
               :title => "Pic",
-              :body => "images/bboys_small.jpg",
+              :body => "<img src='images/small_flare.jpg' width=198 height=188 />",
               :position => 2
             })
-
-#skip creating a user for now
-Factory(:admin)
