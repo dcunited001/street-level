@@ -1,0 +1,13 @@
+%p
+  %strong Date:
+  = event.start.strftime('%a %B %d %Y')
+
+%p
+  %strong From
+  = event.start.strftime("%I:%M %p")
+  %strong to
+  = event.end.strftime("%I:%M %p")
+
+%p
+  %strong Description:
+  = raw event.desc

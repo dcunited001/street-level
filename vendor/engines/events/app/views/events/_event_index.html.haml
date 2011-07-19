@@ -1,0 +1,2 @@
+= render :partial => 'pages/article', :locals => { :article => { :name => link_to("#{event.name} - #{event.start.strftime('%a %B %d %Y')}", event_path(event)),
+  :pic => event.pic, :desc => render(:partial => 'event_list', :locals => { :event => event } ) } }

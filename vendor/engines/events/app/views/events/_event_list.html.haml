@@ -1,0 +1,7 @@
+%p
+  From
+  = event.start.strftime("%I:%M %p")
+  to
+  = event.end.strftime("%I:%M %p")
+
+%p= raw event.desc

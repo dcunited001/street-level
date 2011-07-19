@@ -1,0 +1,4 @@
+= render :partial => 'pages/article', :locals => { :article => { :name => @event.name,
+  :pic => @event.pic,
+  :desc => render(:partial => 'event_details', :locals => { :event => @event } ) } }
+

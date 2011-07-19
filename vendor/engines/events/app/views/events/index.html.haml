@@ -1,0 +1,7 @@
+-# Article for future events
+%h1 Upcoming Events
+= render :partial => 'event_index', :collection => @future_events, :as => :event
+
+%h1 Past Events
+= render :partial => 'event_index', :collection => @past_events, :as => :event
+

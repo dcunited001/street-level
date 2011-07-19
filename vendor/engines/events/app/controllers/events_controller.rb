@@ -4,6 +4,8 @@ class EventsController < ApplicationController
   before_filter :find_page
 
   def index
+    @future_events = @events.where('start >= ?', Date.today).order('start ASC').limit(5)
+    @past_events = @events.where('start < ?', Date.today).order('start DESC')
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @event in the line below:
     present(@page)
@@ -20,7 +22,7 @@ class EventsController < ApplicationController
 protected
 
   def find_all_events
-    @events = Event.order('position ASC')
+    @events = Event.where('visible = ?', true).order('position ASC')
   end
 
   def find_page

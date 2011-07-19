@@ -1,3 +1,3 @@
 = render :partial => 'pages/article', :locals => { :article => { :name => 'Sponsors', :date => @sponsor.created_at,
   :pic => image_fu(@sponsor.pic, '198x188'),
-  :desc => render(:partial => 'sponsor_list', :locals => { :sponsor => @sponsor } ) } }
+  :desc => render(:partial => 'sponsor_details', :locals => { :sponsor => @sponsor } ) } }
