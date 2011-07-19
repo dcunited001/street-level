@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20110718080927) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
-    t.text     "description"
+    t.text     "desc"
     t.datetime "start"
     t.datetime "end"
     t.integer  "event_type_id"

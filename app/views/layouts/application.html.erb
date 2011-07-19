@@ -20,7 +20,7 @@
             </div>
             <div class="sidebar">
                 <%= render :partial => 'shared/sidebar/twitter' %>
-                <%= render :partial => 'shared/sidebar/videos' %>
+                <%= render :partial => 'shared/sidebar/videos', :locals => { :videos => @sidebar_videos } %>
             </div>
             <div class="clr"></div>
           </div>

@@ -5,7 +5,7 @@ class Event < ActiveRecord::Base
   belongs_to :event_type
   belongs_to :pic, :class_name => 'Image'
 
-  acts_as_indexed :fields => [:name, :description]
+  acts_as_indexed :fields => [:name, :desc]
 
   validates :name, :presence => true, :uniqueness => true
 

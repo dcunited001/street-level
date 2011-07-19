@@ -1,21 +1,7 @@
 .menu_nav
   %ul
-    %li{:class => active_nav(page_name, 'home')}
-      %a{:href => '/home'}
-        %span Home
-    %li{:class => active_nav(page_name, 'about-me')}
-      %a{:href => '/about'}
-        %span About
-    %li{:class => active_nav(page_name, 'events')}
-      %a{:href => '/events'}
-        %span Events
-    %li{:class => active_nav(page_name, 'videos')}
-      %a{:href => '/videos'}
-        %span Videos
-    %li{:class => active_nav(page_name, 'sponsors')}
-      %a{:href => '/sponsors'}
-        %span Sponsors
-    %li{:class => active_nav(page_name, 'contact')}
-      %a{:href => '/contact'}
-        %span Contact
+    - ['home', 'about-me', 'events', 'videos', 'sponsors', 'contact'].each do |page|
+      %li{:class => active_nav(page_name, page) }
+        %a{:href => "/#{page}"}
+          %span= page.capitalize
 .clr

@@ -69,7 +69,7 @@ Event.create!(
   :event_type => one_on_one,
   :start => (Date.today - 14) + 14.hours,
   :end => (Date.today - 14) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','evolution-atlanta.jpeg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','evolution-atlanta.jpeg').to_s)),
   :visible => true
 )
 
@@ -79,7 +79,7 @@ Event.create!(
   :event_type => boty,
   :start => (Date.today - 12) + 15.hours,
   :end => (Date.today - 12) + 27.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','boty-canada.jpg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','boty-canada.jpg').to_s)),
   :visible => true
 )
 
@@ -89,7 +89,7 @@ Event.create!(
   :event_type => one_on_one,
   :start => (Date.today - 10) + 14.hours,
   :end => (Date.today - 10) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','evolution-atlanta.jpeg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','evolution-atlanta.jpeg').to_s)),
   :visible => true
 )
 
@@ -99,7 +99,7 @@ Event.create!(
   :event_type => bonnie_and_clyde,
   :start => (Date.today - 7) + 14.hours,
   :end => (Date.today - 7) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','Lovers-rock.jpg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','Lovers-rock.jpg').to_s)),
   :visible => true
 )
 
@@ -109,7 +109,7 @@ Event.create!(
   :event_type => cypher,
   :start => (Date.today - 8) + 14.hours,
   :end => (Date.today - 8) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','bboy-cypher.jpg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','bboy-cypher.jpg').to_s)),
   :visible => true
 )
 
@@ -120,7 +120,7 @@ Event.create!(
   :event_type => cypher,
   :start => (Date.today - 1) + 14.hours,
   :end => (Date.today - 1) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','bboy-cypher.jpg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','bboy-cypher.jpg').to_s)),
   :visible => true
 )
 
@@ -135,7 +135,7 @@ Event.create!(
   :event_type => cypher,
   :start => (Date.today + 6) + 14.hours,
   :end => (Date.today + 6) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','bboy-cypher.jpg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','bboy-cypher.jpg').to_s)),
   :visible => true
 )
 
@@ -145,7 +145,7 @@ Event.create!(
   :event_type => two_on_two,
   :start => (Date.today + 7) + 14.hours,
   :end => (Date.today + 7) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','evolution-atlanta.jpeg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','evolution-atlanta.jpeg').to_s)),
   :visible => true
 )
 
@@ -156,7 +156,7 @@ Event.create!(
   :event_type => one_on_one,
   :start => (Date.today + 14) + 14.hours,
   :end => (Date.today + 14) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','evolution-atlanta.jpeg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','evolution-atlanta.jpeg').to_s)),
   :visible => true
 )
 
@@ -167,7 +167,7 @@ Event.create!(
   :event_type => pop_and_lock,
   :start => (Date.today + 14) + 14.hours,
   :end => (Date.today + 14) + 26.hours,
-  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','sponsors','evolution-atlanta.jpeg').to_s)),
+  :pic => Image.create!(:image => File.new(Rails.root.join('public','images','events','evolution-atlanta.jpeg').to_s)),
   :visible => true
 )
 

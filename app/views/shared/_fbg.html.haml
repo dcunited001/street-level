@@ -2,21 +2,13 @@
   .fbg_resize
     .col.c1
       %h2
-        %span Upcoming
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal1.jpg', :width => 75, :height => 75, :alt => ''}
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal2.jpg', :width => 75, :height => 75, :alt => ''}
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal3.jpg', :width => 75, :height => 75, :alt => ''}
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal4.jpg', :width => 75, :height => 75, :alt => ''}
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal5.jpg', :width => 75, :height => 75, :alt => ''}
-      %a{:href => '#'}
-        %img.gal{:src => 'images/gal6.jpg', :width => 75, :height => 75, :alt => ''}
+        %span Upcoming Events
+      = render :partial => 'shared/fbg/upcoming_event', :collection => @upcoming_events, :as => :event
     .col.c2
-      =render :partial => 'shared/fbg/sponsors'
+      %h2
+        %span Sponsors
+      %ul.fbg_ul
+        =render :partial => 'shared/fbg/sponsors', :collection => @highlighted_sponsors, :as => :sponsor
     .col.c3
       =render :partial => 'shared/fbg/contact_info'
     .clr
