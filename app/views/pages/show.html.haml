@@ -1,0 +1,2 @@
+= render :partial => 'article', :locals => { :article => { :name => @page[:title], :desc => @page[:body], :pic => (@page[:pic] if @page[:pic] and !@page[:pic].empty?) } }
+

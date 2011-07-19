@@ -14,6 +14,11 @@ home_page.parts.create({
               :body => "<p>This is another block of content over here.</p>",
               :position => 1
             })
+home_page.parts.create({
+              :title => "Pic",
+              :body => "images/small_flare.jpg",
+              :position => 2
+            })
 
 home_page_position = -1
 page_not_found_page = home_page.children.create(:title => "Page not found",
@@ -32,7 +37,7 @@ about_us_page = Page.create(:title => "About",
             :position => (page_position += 1))
 about_us_page.parts.create({
               :title => "Body",
-              :body => "<p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.\n\nInteger interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>",
+              :body => "<p>My name is David Conner and I'm a Rails developer from Virginia.  I'm beginning to work solely with the framework, which is exciting because I love it.  I've been working with Ruby and Rails for about 3 years, this is a demo site that I put together recently to demonstrate my skills with Refinery CMS.  </p>",
               :position => 0
             })
 about_us_page.parts.create({
@@ -40,3 +45,11 @@ about_us_page.parts.create({
               :body => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna. Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit. Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie, lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>",
               :position => 1
             })
+about_us_page.parts.create({
+              :title => "Pic",
+              :body => "images/bboys_small.jpg",
+              :position => 2
+            })
+
+#skip creating a user for now
+Factory(:admin)

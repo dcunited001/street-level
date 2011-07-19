@@ -36,7 +36,7 @@ gem 'haml'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '~> 1.0.3'
+gem 'refinerycms',              '~> 1.0.4'
 gem 'rails', '~> 3.0.9'
 
 group :development, :test do
