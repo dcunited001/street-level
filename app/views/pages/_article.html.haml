@@ -3,7 +3,6 @@
     %span= article[:name]
   - if article[:date]
     %p.infopost
-      Posted on
       %span.date= format_article_date(article[:date])
   .clr
   - if article[:pic]

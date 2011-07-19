@@ -3,5 +3,5 @@
     - ['home', 'about-me', 'events', 'videos', 'sponsors', 'contact'].each do |page|
       %li{:class => active_nav(page_name, page) }
         %a{:href => "/#{page}"}
-          %span= page.capitalize
+          %span= page.split('-').join(' ').capitalize
 .clr

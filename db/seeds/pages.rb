@@ -17,7 +17,7 @@ home_page.parts.create({
             })
 home_page.parts.create({
               :title => "Pic",
-              :body => "<img src='images/bboys_small.jpg' width=198 height=188 />",
+              :body => "<img src='/images/bboys_small.jpg' width=198 height=188 />",
               :position => 2
             })
 
@@ -48,6 +48,6 @@ about_us_page.parts.create({
             })
 about_us_page.parts.create({
               :title => "Pic",
-              :body => "<img src='images/small_flare.jpg' width=198 height=188 />",
+              :body => "<img src='/images/small_flare.jpg' width=198 height=188 />",
               :position => 2
             })

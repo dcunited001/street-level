@@ -1,0 +1,3 @@
+-# this might be a case of too much refactoring
+= render :partial => 'pages/article', :locals => { :article => { :name => 'Sponsors',
+  :desc => render(:partial => 'sponsor_index', :collection => @sponsors, :as => :sponsor) } }

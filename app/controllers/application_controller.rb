@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
   before_filter :get_upcoming_events
   before_filter :get_random_sponsors
 
-
   def set_page_name
     @page_name = request.request_uri.split('/').last.to_s
   end
